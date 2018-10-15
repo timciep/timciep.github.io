@@ -1,15 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Tim Cieplowski</title>
+
+    <link rel="shortcut icon" href="public/img/favicon.ico"> 
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119886583-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-119886583-1');
+        gtag('config', 'UA-119886583-1');
     </script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,19 +25,73 @@
 </head>
 
 <body>
-    <div class="jumbotron">
+    <div class="jumbotron" style="padding: 1rem 2rem;">
         <div class="container">
-            <h1>Tim Cieplowski</h1>
-            <p>Web Developer.  Columbia, SC, USA.</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-fluid img-thumbnail" src="https://avatars3.githubusercontent.com/u/2245341?s=460&v=4">
+                </div>
+                <div class="col-md-9">
+                    <h1 class="display-5">Tim Cieplowski</h1>
+                    <p class="lead">Full-Stack Web Developer</p>
+                    <p>Columbia, SC, USA.</p>
+                    <span style="font-size: 2em;">
+                        <a href="https://github.com/timciep" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:tim.cieplowski@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container-fluid">
-        <h2>Sites/Apps</h2>
-        <ul>
-            <li><a href="http://mfc-beaufort.com">Maryland Fried Chicken</a>:  Website for restaurant, in Beaufort, SC.</li>
-            <li><a href="./projects/wikijeopardy">WikiJeopardy</a>:  ReactJS app. Sources data from WikiMedia API.</li>
-        <ul>
+
+        <h2>Work Examples</h2>
+
+        <br>
+
+        <div class="card-deck">
+
+            <div class="card" style="max-width: 350px;">
+                <img class="card-img-top" src="public/img/psa_hp_ds.png" alt="Palmetto State Armory" style="cursor: not-allowed;">
+                <div class="card-body">
+                    <h5 class="card-title">PalmettoStateArmory.com</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Magento Ecommerce website</h6>
+                    <p class="card-text">Numerous contributions over 3.5 years as <i>Web Development Manager</i>. Site has 3M+ montly visitors.</p>
+                    <a href="https://palmettostatearmory.com" class="card-link" target="_blank">Live site</a>
+                    <a href="https://github.com/palmettostatearmory/psa_dyblocks" class="card-link" target="_blank">Example code</a>
+                </div>
+            </div>
+
+            <div class="card" style="max-width: 350px;">
+                <img class="card-img-top" src="public/img/mfc_hp_ds.png" alt="Maryland Fried Chicken" style="cursor: not-allowed;">
+                <div class="card-body">
+                    <h5 class="card-title">mfc-beaufort.com</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Restaurant website</h6>
+                    <p class="card-text">Designed and implemented this website.</p>
+                    <a href="http://mfc-beaufort.com" class="card-link" target="_blank">Live site</a>
+                    <a href="https://github.com/timciep/mfc-beaufort" target="_blank" class="card-link">Source code</a>
+                </div>
+            </div>
+
+            <div class="card" style="max-width: 350px;">
+                <img class="card-img-top" src="public/img/wikijeopardy_hp_ds.png" alt="WikiJeopardy" style="cursor: not-allowed;">
+                <div class="card-body">
+                    <h5 class="card-title">WikiJeopardy</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Browser game</h6>
+                    <p class="card-text">Work-in-progress project for learning ReactJS. Sources data from WikiMedia API.</p>
+                    <a href="projects/wikijeopardy/index.html" target="_blank" class="card-link">Live site</a>
+                    <a href="https://github.com/timciep/wikijeopardy" class="card-link" target="_blank">Source code</a>
+                </div>
+            </div>
+            
+
+        </div>
+
     </div>
+
+<br><br>
+
 </body>
 
 </html>
