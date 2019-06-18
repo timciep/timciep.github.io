@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tim Cieplowski</title>
+    <link>https://timcieplowski.com/</link>
+    <description>Recent content on Tim Cieplowski</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 22 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://timcieplowski.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Movie Series Review: The Human Condition (1959-1961)</title>
+      <link>https://timcieplowski.com/blog/the-human-condition-review/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://timcieplowski.com/blog/the-human-condition-review/</guid>
+      <description>Synopsis, from IMDB:
+ A Japanese pacifist, unable to face the dire consequences of conscientious objection, is transformed by his attempts to compromise with the demands of war-time Japan.
+ The most immediately striking thing to me about this (Japanese) trilogy is how bluntly it exposes the excesses and abuses of the Imperial Japanese system during WWII, so soon after the end of the war.
+The structure of the trilogy reminded me of the TV show, The Wire.</description>
+    </item>
+    
+    <item>
+      <title>Creating Tonal Recall</title>
+      <link>https://timcieplowski.com/blog/tonal-recall/</link>
+      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://timcieplowski.com/blog/tonal-recall/</guid>
+      <description>TL;DR: Check it out here! TonalRecall.us.
+Background With about 1.5 hours of commuting to work each day, I spend a lot of time listening to podcasts. My absolute favorite of which is FilmJunk, a movie discussion show.
+They sometimes play a game called &amp;ldquo;Score Bits&amp;rdquo;, in which the 3 hosts each prepare clips of film score, which are played for the others to guess. Prior to the live 700th episode of the show, the listeners were asked to provide clips for a game of &amp;ldquo;Dialogue Bits&amp;rdquo; (same concept, with clips of movie dialogue).</description>
+    </item>
+    
+    <item>
+      <title>Hello Blog!</title>
+      <link>https://timcieplowski.com/blog/hello-blog/</link>
+      <pubDate>Thu, 02 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://timcieplowski.com/blog/hello-blog/</guid>
+      <description>I decided to overhaul my personal site, with a blog, in order to (hopefully) force myself to write about some of the various things that interest me.
+Some things that I might write about are:
+ Software development. Side-projects that I am working on. Technologies that I am learning. Tutorials. Movie reviews. The NBA.  It would be great if any others find some of the content useful, but I will be satisfied if I can use the exercise to improve as a writer.</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>https://timcieplowski.com/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timcieplowski.com/resume/</guid>
+      <description>Work History Senior Software Engineer at LoudDoor Labs Since October 2018 · Columbia, SC
+ Contribute to a variety of internal applications, supporting digital marketing operations. Some technologies used: Laravel PHP framework, Go, VueJS, MySQL Postgres.  Web Development Manager at Palmetto State Armory 2015 - 2018 · Columbia, SC
+ Write, review, and test code for Magento web application (PHP). Many development contributions in production. Translate business goals into technical solutions and development requirements.</description>
+    </item>
+    
+    <item>
+      <title>Work Examples</title>
+      <link>https://timcieplowski.com/work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://timcieplowski.com/work/</guid>
+      <description>PalmettoStateArmory.com Magento Ecommerce website Numerous contributions over 3.5 years as Web Development Manager. Site has 3M+ montly visitors.
+Live site Example code Magento StackExchange Answers    mfc-beaufort.com Restaurant website Designed and implemented this website.
+Live site Source code    Tonal Recall Audio-clip guessing-game builder. VueJS web app. AWS S3 static-site hosting, and audio-clip storage.
+Live site      /*! CSS Used from: https://stackpath.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="an audio-clip guessing-game builder">
+  <meta name="generator" content="Hugo 0.55.6" />
+
+  <title>Creating Tonal Recall &middot; Tim Cieplowski</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://timcieplowski.com/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://timcieplowski.com/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://timcieplowski.com/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://timcieplowski.com/img/favicon.ico" type="image/x-icon" />
+
+  
+    
+        <link rel="stylesheet" href="https://timcieplowski.com/css/my.css">
+    
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://timcieplowski.com/">TC</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://timcieplowski.com/"><i class='fa fa-home fa-fw'></i> Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://timcieplowski.com/resume/"><i class='fa fa-user fa-fw'></i> Resume</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://timcieplowski.com/work/"><i class='fas fa-code'></i> Work Examples</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://timcieplowski.com/blog/"><i class='fa fa-list fa-fw'></i> Blog</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="mailto:tim.cieplowski@gmail.com"><i class='fas fa-envelope'></i> Email</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/tim-cieplowski-167a9942" rel="me" target="_blank"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/timciep" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2019. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Creating Tonal Recall</h1>
+  <h2>an audio-clip guessing-game builder</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>09 May 2019</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  
+
+<p>TL;DR: Check it out here! <a href="https://tonalrecall.us">TonalRecall.us</a>.</p>
+
+<h1 id="background">Background</h1>
+
+<p>With about 1.5 hours of commuting to work each day, I spend a lot of time listening to podcasts.  My absolute favorite of which is <a href="https://filmjunk.com">FilmJunk</a>, a movie discussion show.</p>
+
+<p>They sometimes play a game called &ldquo;Score Bits&rdquo;, in which the 3 hosts each prepare clips of film score, which are played for the others to guess.  Prior to the live 700th episode of the show, the listeners were asked to provide clips for a game of &ldquo;Dialogue Bits&rdquo; (same concept, with clips of movie dialogue).</p>
+
+<h1 id="one-off-app">One-off app</h1>
+
+<p>Anticipating that it might be logistically difficult to organize all of the provided clips and answers, I built a demo web app for playing audio clips with show/hide functionality for the answers.  After sharing this with the hosts of the show, they agreed to send me all of the listener-supplied clips to load into my app, for them to use on the show.</p>
+
+<p>The result was <a href="http://dialoguebits-fj700.timcieplowski.com" target="_blank">this one-off app <i class="fas fa-external-link-alt"></i></a>.  Listen to it being used, below, starting at 1:25:30:</p>
+
+<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Ffilmjunk%2Ffilm-junk-podcast-episode-700-the-dirt-us%2F" frameborder="0" ></iframe>
+
+<p>Following the episode, several listeners reached-out to me, asking about how they could create their own games.  Since the initial app had the clip content hard-coded, it was not reusable.</p>
+
+<p>After doing some searching, and not finding something similar, I decided that it would be a fun project to build a full web-app for users to create their own audio-clip guessing games.</p>
+
+<h1 id="initiating-tonal-recall">Initiating&hellip;Tonal Recall</h1>
+
+<p>What I ended up building is a site where users can create a &ldquo;game board&rdquo; by uploading and labeling their own audio clips, with a resulting interface for playing the clips and revealing the labels.</p>
+
+<p><img src="https://timcieplowski.com/img/tonal-recall.png" alt="Tonal Recall game board" title="Tonal Recall game board" /></p>
+
+<p>The name is a play on the name of the movie <a href="https://www.imdb.com/title/tt0100802/">Total Recall</a>, from 1990.</p>
+
+<h1 id="how-it-works">How it works</h1>
+
+<h2 id="architecture">Architecture</h2>
+
+<p>Within an <a href="https://aws.amazon.com/s3/">AWS S3</a> bucket, each game is represented by a folder named with a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</a>.  Within each game folder is a JSON, which contains all of the data about the clips, including a unique identifier for each clip.</p>
+
+<p>Also within each game folder is an <code>clips</code> folder, which, in turn, has a folder named with the unique identifier of each clip.  These folders contain either a single clip file; or a small, medium, and large clip.</p>
+
+<pre><code>|- Games-S3-Bucket
+|  |- unique-game-id
+|  |  |- game.json
+|  |  |- clips
+|  |  |  |- unique-clip-id
+|  |  |  |  |- sm.mp3
+|  |  |  |  |- md.mp3
+|  |  |  |  |- lg.mp3
+</code></pre>
+
+<h2 id="game-creation">Game creation</h2>
+
+<p>The homepage of the site provides a <em>Create New Game</em> form, requiring an <code>Email</code> input.  On the submission of this form, a UUID is generated as the identifier for the new game.  The new folder and game JSON files get created and</p>
+
+<p>An email is also fired to the user, containing the unique URL for their new game board, using <a href="https://www.emailjs.com/">EmailJS</a>.</p>
+
+<h2 id="the-game-board">The game board</h2>
+
+<p>With the game&rsquo;s UUID provided in the the URL, the game&rsquo;s JSON file can be downloaded, in order to populate the &ldquo;game board&rdquo;</p>
+
+<p>The board page is built using <a href="https://vuejs.org/">VueJS</a>, with a special shout-out to the <a href="https://github.com/SortableJS/Vue.Draggable">Vue.Draggable</a> package for providing the drag-and-drop reordering functionality.</p>
+
+<p>Each time a user edits game data or uploads a clip, the game&rsquo;s JSON file gets re-written to S3 (along with the clip).</p>
+
+<h2 id="site-hosting">Site hosting</h2>
+
+<p>All app functionality is achieved client-side, with direct S3 interactions.  This allows the site to also be hosted statically on S3, with <a href="https://aws.amazon.com/cloudfront/">CloudFront</a> in front to provide SSL.</p>
+
+<h1 id="future-plans">Future plans</h1>
+
+<ul>
+<li>Add &ldquo;sharing&rdquo; functionality, so that a read-only version of a game can be shared.</li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>I enjoyed working on this app, as a great learning project.  I plan to leave it up indefinitely, at it is staticlly hosted on S3 and therfore very cheap to run.  If it finds someone who can get some use out of it, that&rsquo;s a bonus!</p>
+
+<p>Give it a try and let me know what you think: <a href="https://tonalrecall.us">TonalRecall.us</a></p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://timcieplowski.com/blog/hello-blog/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://timcieplowski.com/blog/hello-blog/">Hello Blog!</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://timcieplowski.com/blog/the-human-condition-review/">Movie Series Review: The Human Condition (1959-1961)</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://timcieplowski.com/blog/the-human-condition-review/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+<script src="https://timcieplowski.com/js/ui.js"></script>
+<script src="https://timcieplowski.com/js/menus.js"></script>
+
+
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'Your Google Analytics tracking ID', 'auto');
+    ga('send', 'pageview');
+  }
+</script>
+
+
+
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="\/\/analytics.example.com\/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId',  2 ]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.example.com/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+
+
+
+</body>
+</html>
+
